@@ -9,5 +9,44 @@ return [
         'cache' => [
             'class' => \yii\caching\FileCache::class,
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
+            'rules' => [
+                '' => 'fruit/index'
+            ],
+        ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js' => []
+                ],
+                'yii\web\YiiAsset' => [
+                    'js' => []
+                ],
+                'yii\captcha\CaptchaAsset' => [
+                    'js' => []
+                ],
+                'yii\grid\GridViewAsset' => [
+                    'js' => []
+                ],
+                'yii\widgets\ActiveFormAsset' => [
+                    'js' => []
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => []
+                ],
+                'yii\validators\ValidationAsset' => [
+                    'js' => []
+                ],
+                'yii\widgets\PjaxAsset' => [
+                    'js' => []
+                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [],
+                ],
+            ],
+        ],
     ],
 ];
