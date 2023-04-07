@@ -1,12 +1,25 @@
 # test
 
-Run php init
+# Download or clone the code from given link: https://github.com/amithandaldh/test.git
 
-Run Migration
+# After download and extract or clone the code you need to follow below steps
 
-DB Setting
-common/config/main-local.php
+# go to root directory from terminal and run below command for create hidden files
+php init
 
-Run composer install or update
+# Create a DB in mysql
+# Do DB Settings in given file path common/config/main-local.php
 
-VartualHost
+# Run Migration to import DB
+php yii migrate
+
+# Run composer install or update
+composer update
+
+# Create VirtualHost for frontend/web/ directory apache\conf\extra\httpd-vhosts.conf
+
+# Restart your apache server and run the project
+
+Write a console script for getting all fruits from https://fruityvice.com/ and saving them into local DB (MySQL or PostgreSQL).
+# run this command from terminal to fetch all fruits, for example:
+php yii fruits/fetch
